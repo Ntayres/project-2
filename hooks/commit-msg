@@ -1,0 +1,17 @@
+#!/bin/sh
+# Project 2 harness: every commit message must start with a role tag.
+first=$(head -n 1 "$1")
+case "$first" in
+  Merge*|Revert*|"fixup! "*|"squash! "*) exit 0 ;;
+esac
+if echo "$first" | grep -Eq '^\[(builder|reviewer|tester|student|harness)\] .+'; then
+  exit 0
+fi
+echo "Commit rejected: the message must start with a role tag." >&2
+echo "  [builder]  code, PLAN.md, docs/ reports" >&2
+echo "  [reviewer] review reports" >&2
+echo "  [tester]   tests and test logs" >&2
+echo "  [student]  your own work: AGENTS.md, decision logs, REPORT.md, REFLECTION.md" >&2
+echo "Commit each saved transcript with the tag of the role that made it." >&2
+echo "Example: [builder] Step 1: load files and extract labels" >&2
+exit 1

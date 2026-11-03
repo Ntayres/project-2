@@ -1,0 +1,14 @@
+# Harness working files (prompts, diffs, current session)
+.harness/
+
+# Dataset: keep it out of git
+input_data/*
+!input_data/README.md
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+.ipynb_checkpoints/
