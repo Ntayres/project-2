@@ -1,0 +1,34 @@
+f2f9fa6 [builder] Initialize Project 2 harness
+
+050b587 [builder] Set up shared project context and plan
+3a109a8 [reviewer] Step 0 review
+
+270ca62 [builder] Load data and extract labels
+26c30c7 [reviewer] Step 1 review
+f9661f0 [tester] Add data-loading tests
+
+236b3cc [builder] Analyze feature drift
+cff6695 [reviewer] Step 2 review
+fc3a4d6 [tester] Add drift-analysis tests
+
+97b4763 [builder] Add leakage-safe preprocessing
+403818e [reviewer] Step 3 review
+9f154a3 [tester] Add preprocessing tests
+
+96274db [builder] Select and train models
+9938489 [reviewer] Step 4 review
+4d752e1 [tester] Add model-selection tests
+
+f39141f [builder] Evaluate held-out predictions
+9251312 [reviewer] Step 5 review
+5f5d796 [tester] Add evaluation tests
+
+01f4c0b [builder] Add year-by-year predictions
+2602fb9 [reviewer] Step 6 review
+6b0a9fe [tester] Add prediction-analysis tests
+
+3556144 [builder] Add sustainable learning strategies
+98a3e1d [reviewer] Step 7 review
+227a105 [tester] Add sustainable-strategy tests
+
+b7f6977 [builder] Document project workflow and agent roles
